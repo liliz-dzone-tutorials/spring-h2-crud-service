@@ -1,12 +1,12 @@
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (0, 'HORROR', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (1, 'ROMANCE', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (2, 'SCI-FI', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (3, 'MANGA', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (4, 'GRAPHIC NOVEL', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (5, 'NON FICTION', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (6, 'THRILLER', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (7, 'FANTASY', '');
-INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (8, 'CHILDRENS', '');
+INSERT INTO genre (id, name, description) VALUES (0, 'HORROR', '');
+INSERT INTO genre (id, name, description) VALUES (1, 'ROMANCE', '');
+INSERT INTO genre (id, name, description) VALUES (2, 'SCI-FI', '');
+INSERT INTO genre (id, name, description) VALUES (3, 'MANGA', '');
+INSERT INTO genre (id, name, description) VALUES (4, 'GRAPHIC NOVEL', '');
+INSERT INTO genre (id, name, description) VALUES (5, 'NON FICTION', '');
+INSERT INTO genre (id, name, description) VALUES (6, 'THRILLER', '');
+INSERT INTO genre (id, name, description) VALUES (7, 'FANTASY', '');
+INSERT INTO genre (id, name, description) VALUES (8, 'CHILDRENS', '');
 
 INSERT INTO book(id, name, author_name, author_surname, editorial)
     VALUES (0, 'Jujutsu Kaisen 0', 'Gege', 'Akutami', 'Norma Comics');
