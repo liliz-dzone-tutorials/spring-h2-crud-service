@@ -9,15 +9,4 @@ import java.math.BigDecimal;
 
 public interface BookService {
 
-    Flux<Book> allBooks(String name, String authorName, String authorSurname, String editorial);
-
-    Flux<Book> allBooks();
-
-    Mono<BookResponse> allBooksPaginated(int size, int page);
-
-    Flux<Book> booksGenreNameLike(String name);
-
-    Mono<Book> bookById(BigDecimal id);
-
-    Mono<BigDecimal> addBook(Book book);
 }

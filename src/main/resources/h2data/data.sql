@@ -8,12 +8,6 @@ INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (6, 'THRILLER', '');
 INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (7, 'FANTASY', '');
 INSERT INTO "GENRE" ("ID", "NAME", "DESCRIPTION") VALUES (8, 'CHILDRENS', '');
 
-INSERT INTO status(id, name, description) VALUES (0, 'COMPLETED', 'I have red this book');
-INSERT INTO status(id, name, description) VALUES (1, 'READING', 'Currently reading');
-INSERT INTO status(id, name, description) VALUES (2, 'PENDING', 'Want to read this book');
-INSERT INTO status(id, name, description) VALUES (3, 'ABANDONED', 'Started and disliked');
-INSERT INTO status(id, name, description) VALUES (4, 'PAUSED', 'Started but not finished - Want to continue');
-
 INSERT INTO book(id, name, author_name, author_surname, editorial)
     VALUES (0, 'Jujutsu Kaisen 0', 'Gege', 'Akutami', 'Norma Comics');
 INSERT INTO book(id, name, author_name, author_surname, editorial)
@@ -61,32 +55,3 @@ INSERT INTO book_genres (book_id, genre_id) VALUES (10, 4);
 INSERT INTO book_genres (book_id, genre_id) VALUES (10, 2);
 INSERT INTO book_genres (book_id, genre_id) VALUES (11, 0);
 INSERT INTO book_genres (book_id, genre_id) VALUES (11, 6);
-
-INSERT INTO users(id, username, name) VALUES (0, 'paul_b', 'Paul Becker');
-INSERT INTO users(id, username, name) VALUES (1, 'powers94', 'Martin Powers');
-INSERT INTO users(id, username, name) VALUES (2, 'brownli', 'Lillian Brown');
-INSERT INTO users(id, username, name) VALUES (3, 'maggie92', 'Marge Adams');
-
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (0, 0, 6, 0, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (1, 0, 2, 3, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (2, 0, 0, 2, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (3, 0, 1, 2, false, '', '', '');
-
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (4, 1, 0, 0, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (5, 1, 1, 1, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (6, 1, 11, 2, false, '', '', '');
-
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (7, 3, 11, 1, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (8, 3, 5, 0, false, '', '', '');
-INSERT INTO users_registry(id, user_id, book_id, status, favorite, added, modified, notes)
-    VALUES (8, 3, 3, 3, false, '', '', '');
-

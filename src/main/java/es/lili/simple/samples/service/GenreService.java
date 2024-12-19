@@ -7,10 +7,4 @@ import java.util.List;
 
 public interface GenreService {
 
-    boolean isValidGenre(Genre genre);
-    List<Genre> findGenreInformation(List<Long> genreIds);
-
-    List<Long> retrieveGenreIdsWithNameMatching(String name);
-
-    Mono<Genre> addGenre(Genre genre);
 }

@@ -1,4 +1,4 @@
-package es.lili.simple.samples.db;
+package es.lili.simple.samples.db.entity;
 
 import lombok.*;
 
