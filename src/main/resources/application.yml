@@ -1,0 +1,46 @@
+spring:
+  config:
+    import: "optional:configserver:http://localhost:8888/"
+  profiles:
+    active: ${ACTIVE_PROFILE:local}
+  thymeleaf:
+    reactive:
+      max-chunk-size: 8192
+    cache: false #only disable while develop to load changes on runtime
+  application:
+    name: archetype
+  datasource:
+    url: ${env.ds-config.url}
+    username: ${env.ds-config.username}
+    password: ${env.ds-config.password}
+    driverClassName: ${env.ds-config.driver}
+  jpa:
+    database-platform: ${env.jpa-config.database-platform}
+    defer-datasource-initialization: ${env.jpa-config.defer-datasource-initialization}
+  sql:
+    init:
+      data-locations: ${env.sql-config.init.data-location}
+      mode: ${env.sql-config.init.mode}
+      platform: ${env.sql-config.init.platform}
+  h2:
+    console:
+      enabled: ${env.h2-config.console.enabled}
+      path: ${env.h2-config.console.path}
+      settings.trace: ${env.h2-config.console.settings.trace}
+      settings.web-allow-others: ${env.h2-config.console.settings.web-allow-others}
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: refresh
+
+logging:
+  level:
+    org.hibernate.SQL: DEBUG
+    es.lili.simple.samples: DEBUG
+    root: INFO
+lili-app-props:
+  book-management:
+  user-management:
+  reading-tracker:
