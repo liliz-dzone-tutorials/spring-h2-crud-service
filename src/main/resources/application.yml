@@ -37,10 +37,6 @@ management:
 
 logging:
   level:
-    org.hibernate.SQL: DEBUG
-    es.lili.simple.samples: DEBUG
-    root: INFO
-lili-app-props:
-  book-management:
-  user-management:
-  reading-tracker:
+    org.hibernate.SQL: ${SQL_LOG_LEVEL}
+    es.lili.simple.samples: ${THIS_APP_LOG_LEVEL}
+    root: ${ROOT_LOG_LEVEL}
