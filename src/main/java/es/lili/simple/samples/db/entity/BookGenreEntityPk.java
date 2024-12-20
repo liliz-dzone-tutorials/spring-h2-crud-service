@@ -2,8 +2,6 @@ package es.lili.simple.samples.db.entity;
 
 import lombok.*;
 
-import java.math.BigDecimal;
-
 @Setter
 @Getter
 @Builder
@@ -11,6 +9,6 @@ import java.math.BigDecimal;
 @AllArgsConstructor
 public class BookGenreEntityPk {
 
-    private BigDecimal bookId;
+    private Long bookId;
     private Long genreId;
 }

@@ -3,8 +3,6 @@ package es.lili.simple.samples.db.entity;
 import jakarta.persistence.*;
 import lombok.*;
 
-import java.math.BigDecimal;
-
 @Setter
 @Getter
 @Builder
@@ -17,7 +15,7 @@ public class BookGenreEntity {
 
     @Id
     @Column(name = "book_id")
-    private BigDecimal bookId;
+    private Long bookId;
     @Id
     @Column(name = "genre_id")
     private Long genreId;

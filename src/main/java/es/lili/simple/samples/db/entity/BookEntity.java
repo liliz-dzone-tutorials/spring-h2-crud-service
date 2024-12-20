@@ -6,8 +6,6 @@ import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 import lombok.*;
 
-import java.math.BigDecimal;
-
 @Setter
 @Getter
 @Builder
@@ -19,7 +17,7 @@ public class BookEntity {
 
     @Id
     @Column(name = "id")
-    private BigDecimal id;
+    private Long id;
     @Column(name = "name")
     private String name;
     @Column(name = "authorName")
